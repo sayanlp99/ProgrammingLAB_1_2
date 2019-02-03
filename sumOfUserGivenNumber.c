@@ -9,5 +9,5 @@ void main(){
 		number=number/10;
 		sum=sum+r;
 	}
-	printf("Sum of the use given number %d: %d\n",n,sum);
+	printf("Sum of the digits of the user given number %d: %d\n",n,sum);
 }
