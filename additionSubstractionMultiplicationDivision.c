@@ -10,6 +10,5 @@ void main(){
 	sub=num1-num2;
 	multi=num1*num2;
 	div=num1/num2;
-	printf("Addition:%d\nSubstraction:%d\nMultiplication:%f\nDivision:%f\n",add,sub,multi,div);
-	
+	printf("Addition:%d\nSubstraction:%d\nMultiplication:%f\nDivision:%f\n",add,sub,multi,div);	
 }
