@@ -13,4 +13,3 @@ void main(){
 	if(i==number)
 		printf("%d is Prime number.\n",number);
 }
-	
