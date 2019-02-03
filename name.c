@@ -1,5 +1,3 @@
-/*program to print name, college, roll no
-ftudrtydrtydrty*/
 #include<stdio.h>
 void main(){
 	printf("MY NAME IS SANGITA PARUI\n");
