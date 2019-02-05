@@ -1,13 +1,14 @@
 #include<stdio.h>
 void main(){
-    int i,num,a=0,b=1,c;
-    printf("Enter number:");
+    int f1=0,f2=1,f3,i=3,num;
+    printf("Enter length of the  fibonacci series:");
     scanf("%d",&num);
-    printf("Fibonacci Series:");
-    for(i=0;i<=num;i++){
-        printf("%d ",a);
-        c=a+b;
-        a=b;
-        b=c;
+    printf("%d %d",f1,f2); 
+    while(i<=num){
+        f3=f1+f2;
+        printf(" %d",f3);
+        f1=f2;
+        f2=f3;
+        i++;
     }
 }
