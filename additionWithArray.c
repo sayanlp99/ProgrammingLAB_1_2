@@ -9,5 +9,5 @@ void main(){
     }
     for(i=0;i<=n;i++)
         sum=sum+a[i];
-    printf("Sum of all the elemets is:%d\n",sum);
+    printf("Sum of all the elements is:%d\n",sum);
 }
