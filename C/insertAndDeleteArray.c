@@ -1,6 +1,6 @@
 #include<stdio.h>
 void main(){
-    int arr[50],i,size,num,pos;;
+    int arr[50],i,size,num,pos,n,p;
     printf("Enter the number of elements to be added:");
     scanf("%d",&size);
     for(i=0;i<size;i++){
@@ -22,10 +22,22 @@ void main(){
         }
         arr[pos-1] = num;
         size++;
-        printf("Array elements after insertion : ");
+        printf("Array elements after insertion :");
         for(i=0; i<size; i++)
         {
             printf("%d ", arr[i]);
         }
+        printf("\n");
     }
+    printf("Enter the location where you wish to delete element:");
+    scanf("%d", &p);
+    if (p >= size+1)
+      printf("Deletion not possible.\n");
+    else{
+        for (i = p - 1; i < size - 1; i++)
+            arr[i] = arr[i+1];
+        printf("Resultant array:");
+        for (i = 0; i < size - 1; i++)
+            printf("%d ", arr[i]);
+   }
 }
