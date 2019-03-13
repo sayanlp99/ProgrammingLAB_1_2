@@ -2,17 +2,17 @@
 #include <stdio.h>
 int power(int n1, int n2);
 void main(){
-    int base, powerRaised, result;
+    int x, n, result;
     printf("Enter base number:");
-    scanf("%d",&base);
+    scanf("%d",&x);
     printf("Enter power number(positive integer):");
-    scanf("%d",&powerRaised);
-    result = power(base, powerRaised);
-    printf("%d^%d = %d", base, powerRaised, result);
+    scanf("%d",&n);
+    result = power(x, n);
+    printf("%d^%d = %d", x, n, result);
 }
-int power(int base, int powerRaised){
-    if (powerRaised != 0)
-        return (base*power(base, powerRaised-1));
+int power(int x, int n){
+    if (n != 0)
+        return (x*power(x, n-1));
     else
         return 1;
 }
