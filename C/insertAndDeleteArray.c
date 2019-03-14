@@ -33,6 +33,7 @@ void main(){
     else{
         for (i = p - 1; i < size - 1; i++)
             arr[i] = arr[i+1];
+            
         printf("Resultant array:");
         for (i = 0; i < size - 1; i++)
             printf("%d ", arr[i]);
