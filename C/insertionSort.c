@@ -1,24 +1,23 @@
-#include<stdio.h>
+#include <stdio.h>
 void main(){
-	int a[20],i,j,n,t;
-	printf("Enter the range:");
-	scanf("%d",&n);
-	printf("Enter the elements of the array:\n");
-	for(i=0;i<n;i++){
-		printf("[%d]:",i+1);
-		scanf("%d",&a[i]);
+	int n, a[50], c, d, t;
+	printf("Enter number of elements:");
+	scanf("%d", &n);
+	printf("Enter the elememts:\n");
+	for (c = 0; c < n; c++){
+		printf("[%d]:",c+1);
+		scanf("%d", &a[c]);
 	}
-	for(i=0;i<n;i++){
-		t=a[i];
-		j=i-1;
-		while(j>=0 && a[i]>t){
-			a[j+1]=a[j];
-			j=j-1;
+   for (c = 1 ; c <= n - 1; c++){
+		d = c;
+		while ( d > 0 && a[d-1] > a[d]) {
+			t=a[d];
+			a[d]=a[d-1];
+			a[d-1] = t;
+			d--;
 		}
-		a[j+1]=t;
 	}
-	printf("Sorted Array:\n");
-	for(i=0;i<n;i++)
-		printf("%d ",a[i]);
-	printf("\n");
+	printf("Sorted list in ascending order:\n");
+	for (c = 0; c <= n - 1; c++)
+		printf("%d ", a[c]);
 }
