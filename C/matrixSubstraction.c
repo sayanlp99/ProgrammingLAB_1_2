@@ -1,16 +1,16 @@
 #include<stdio.h>
 void main(){
-	int m1[50][50],m2[50][50],m3[50][50],i,j,r1,c1,r2,c2,k;
-	printf("Enter number of rows of First Matrix:");
+	int i,j,r1,r2,c1,c2,m1[50][50],m2[50][50],m3[50][50];
+	printf("Enter number of rows for 1st Matrix:");
 	scanf("%d",&r1);
-	printf("Enter number of columns of First Matrix:");
+	printf("Enter number of columns for 1st Matrix:");
 	scanf("%d",&c1);
-	printf("Enter number of rows of Second Matrix:");
+	printf("Enter number of rows for 2nd Matrix:");
 	scanf("%d",&r2);
-	printf("Enter number of columns of Second Matrix:");
+	printf("Enter number of columns for 2nd Matrix:");
 	scanf("%d",&c2);
-	if(r1!=c2 && r2!=c1)
-		printf("Multiplication is not possible.\n");
+	if(r1!=r2 || c1!=c2)
+		printf("Substraction not possible for this set of Matrices.\n");
 	else{
 		printf("Enter elements of First Matrix:\n");
 		for(i=0;i<r1;i++){
@@ -39,22 +39,14 @@ void main(){
 			printf("\n");
 		}
 		for(i=0;i<r1;i++){
-			for(j=0;j<c2;j++)
-				m3[i][j]=0;
+			for(j=0;j<c1;j++)
+				m3[i][j]=m1[i][j]-m2[i][j];
 		}
+		printf("Matrix after Substraction:\n");
 		for(i=0;i<r1;i++){
-			for(j=0;j<c2;j++){
-				for(k=0;k<c1;k++)
-					m3[i][j]+=m1[i][k]*m2[k][j];
-			}
-		}
-		printf("Multiplied Matrix:\n");
-		for(i=0;i<r1;i++){
-			for(j=0;j<c2;j++){
+			for(j=0;j<c1;j++)
 				printf("%d ",m3[i][j]);
-				if(j==c2-1)
-					printf("\n");
-			}
+			printf("\n");
 		}
 	}
 }
