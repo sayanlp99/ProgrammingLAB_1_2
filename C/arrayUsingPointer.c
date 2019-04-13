@@ -5,7 +5,7 @@ void main(){
     scanf("%d",&n);
     printf("Enter elements:\n");
     for(i = 0; i < n; i++){
-        printf("[%d]:")
+        printf("[%d]:",i+1);
         scanf("%d", data + i);
     }
     printf("You entered:\n");
