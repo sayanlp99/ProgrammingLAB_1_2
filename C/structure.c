@@ -25,7 +25,7 @@ void main(){
         printf("\nRoll number: %d\n",i+1);
         printf("Name: ");
         puts(s[i].name);
-        printf("Marks: %.1f",s[i].marks);
+        printf("Marks:%d",s[i].marks);
         printf("\n");
     }
 }

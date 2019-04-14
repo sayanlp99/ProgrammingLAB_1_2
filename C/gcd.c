@@ -9,5 +9,6 @@ void main(){
         else
             n2-= n1;
     }
+    
     printf("GCD:%d",n1);
 }
