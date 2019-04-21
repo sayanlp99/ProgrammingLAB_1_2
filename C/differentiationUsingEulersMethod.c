@@ -20,5 +20,4 @@ void main(){
 		x0=x1;
 	}
 	printf("x0=%f\ty0=%f\n",x1,y1);
-}		
-	
+}
