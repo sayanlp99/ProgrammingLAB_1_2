@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<stdlib.h>
+#include<string.h>
 struct student{
     char name[50];
     int roll;
@@ -15,7 +15,7 @@ void main(){
         printf("\nFor roll number %d:\n",s[i].roll);
         printf("Enter name:");
         scanf("%s",s[i].name);
-        --fpurge(stdin);
+        __fpurge(stdin);
         printf("Enter marks:");
         scanf("%d",&s[i].marks);
         printf("\n");
