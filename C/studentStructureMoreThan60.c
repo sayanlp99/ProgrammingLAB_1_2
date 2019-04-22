@@ -20,7 +20,7 @@ void main(){
         scanf("%d",&s[i].marks);
         printf("\n");
     }
-    printf("Stdents geeting Marks more than 60:-\n\n");
+    printf("Students geeting Marks more than 60:-\n\n");
     for(i=0;i<n;i++){
         if(s[i].marks>=60){
             printf("Roll No:%d\n",s[i].roll);
