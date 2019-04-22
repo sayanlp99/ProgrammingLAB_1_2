@@ -1,5 +1,4 @@
 #include<stdio.h>
-void disp(int *,int);
 void main(){
     int n,a[50];
     printf("Enter range of the array:");
@@ -9,7 +8,7 @@ void main(){
         printf("[%d]:",i+1);
         scanf("%d",&a[i]);
     }
-    printf("The Array Elements:\n");
+    printf("Array Elements:\n");
     for(int i=0;i<n;i++)
         printf("%d ",*(a+i));
     printf("\n");
