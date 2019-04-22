@@ -11,7 +11,6 @@ void main(){
     scanf("%d",&n);
     printf("Enter information of students:-\n\n");
     for(i=0; i<n; ++i){
-        s[i].roll = i+1;
         printf("Enter roll number:");
         scanf("%d",&s[i].roll);
         printf("Enter name:");
