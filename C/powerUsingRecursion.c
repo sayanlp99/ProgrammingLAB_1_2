@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 int power(int n1, int n2);
 void main(){
