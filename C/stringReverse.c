@@ -15,4 +15,3 @@ void main(){
 	r[begin]=='\0';
 	printf("%s\n",r);
 }
-
