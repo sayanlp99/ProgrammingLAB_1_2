@@ -12,5 +12,5 @@ void main(){
         if(c==2)
             s=s+j;
     }
-    printf("Summation of the Prime Numbers:%d",s);
+    printf("Summation of the Prime Numbers:%d\n",s);
 }
